@@ -1,13 +1,12 @@
 
 body {
-    background-color: #6c757d;
+    background-color: #82a2a7;
       repeat;
     background-size: cover;
    }
 
 h2 {
-    font-size: 50px;
-    color: rgb(206, 166, 192)
+    font-size: 30px;
     margin: 10px
     border: 2px solid #;
 }
@@ -18,9 +17,14 @@ h2 {
     margin-left: 20%;
     padding: 5%
 }
+#contact-links {
+    color: #FFFFFF;
+    margin-left: 20%;
+    
+}
 
 #contactForm {
-    background-color: #868e96;
+    background-color: #EBF8FA;
     font-family: 'Arial', cursive;
     display: inline-block;
     text-align: center;
@@ -29,8 +33,3 @@ h2 {
     border-radius: 25px;
     padding: 10px;  
    }
-
-#image {
-float: none;
-display: inline-block;
-}
