@@ -1,0 +1,36 @@
+
+body {
+    background-color: #6c757d;
+      repeat;
+    background-size: cover;
+   }
+
+h2 {
+    font-size: 50px;
+    color: rgb(206, 166, 192)
+    margin: 10px
+    border: 2px solid #;
+}
+
+#text-block {
+    color: #ffffff;
+    border-style: solid
+    margin-left: 20%;
+    padding: 5%
+}
+
+#contactForm {
+    background-color: #868e96;
+    font-family: 'Arial', cursive;
+    display: inline-block;
+    text-align: center;
+    border-style: solid;
+    margin: 10%;
+    border-radius: 25px;
+    padding: 10px;  
+   }
+
+#image {
+float: none;
+display: inline-block;
+}

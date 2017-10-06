@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">       
-    <link href="styles.css" rel="stylesheet"
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/lightbox.css" rel="stylesheet">   
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cohort 22</title>
+    <title>John Dulaney - Funny Man</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
                 <a class="navbar-brand" href="#">John Dulaney</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -17,18 +20,36 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Bio</a>
-                    <a class="nav-item nav-link" href="#">Projects</a>
-                    <a class="nav-item nav-link" href="#">Blog</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="pages/bio.html">Bio</a>
+                    <a class="nav-item nav-link" href="pages/projects.html">Projects</a>
+                    <a class="nav-item nav-link" href="pages/blog.html">Blog</a>
+                    <a class="nav-item nav-link" href="pages/contact.html">Contact</a>
                 </div>
                 </div>
               </nav>
-    <article id="intro" class="article">
+           <!-- Head title  -->
+    <div id="intro">
         <h1>I am in Cohort 22, lets hope I can see this!</h1>
-    </article>    
-    <article id="history" class="article">
-            <p>Brief about me</p>
-    </article>
+    </div>    
+           <!-- opener text -->
+    <div class="container">
+            <div id="text-block" class="col-6 align-self-center">
+                <h2>A Little About Me</h2>
+                <p> I was born in Knoxville, TN on November 22, 1988. I am the youngest of three children, my siblings both being sisters. They are both named Allison which is an intersting coincidence (we refer to them by their respective middle initials). My oldest
+                sister is an Anesthesiologist and the other one is a Lawyer. Both practice in Knoxville. I've lived with my parents in middle Tennessee since 1994, in the Brentwood/Franklin area.</p>
+                                    
+                <p>Some hobbies I enjoy are watching college football, playing wheelchair sports, pretending I know what is going on in politics, and playing around with my dog. </p>
+                                    
+            </div>
+            <div id="image" class=".col-md-4 .col-md-offset-4">
+                <a href="images/me_boy_boat.jpg" data-lightbox="image-1" data-title="I'm on a Boat">Image #1></a>
+            
+            </div>
+
+    </div>     
+
 </body>
+<footer>
+<script src="js/lightbox.js"></script>    
+</footer>
 </html>
