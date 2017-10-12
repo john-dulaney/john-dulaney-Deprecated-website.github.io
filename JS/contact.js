@@ -12,7 +12,7 @@ let githubObject = {
     "url": 'john.s.dulaney1@gmail.com',
     "icon": '../images/gmail.svg',
   }
-
+ 
 
 // Vague attempt(s) to store it
   const githubString = JSON.stringify(githubObject)

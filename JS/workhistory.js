@@ -24,7 +24,7 @@ let fmObject = {
     "dates": '2012- 2017',
     "responsibilities": 'Keep the house clean and make life easy for elderly parents/recover from broken back/go to school',
   }
-
+ 
 
 // Vague attempt(s) to store it
   const fmString = JSON.stringify(fmObject)

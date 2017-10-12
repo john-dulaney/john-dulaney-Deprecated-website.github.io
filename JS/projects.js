@@ -13,7 +13,7 @@ let projOneObject = {
     "date completed": 'None',
     "technologies used": 'HTML, JS, CSS',
     "teammates": 'None',
-  }
+  } 
 
   let projThreeObject = {
     "name": 'Capstone',

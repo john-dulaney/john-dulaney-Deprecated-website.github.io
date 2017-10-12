@@ -11,6 +11,7 @@ h2 {
     border: 2px solid #;
 }
 
+/* Main Rules for body text */
 #text-block {
     color: #ffffff;
     border-style: solid
@@ -23,6 +24,20 @@ h2 {
     
 }
 
+#insidepics {
+    padding-right: 50px;
+}
+
+#profilepic {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    flex: 1;
+    align-items: center;
+    
+    justify-content: space-around;
+
+}
 #contactForm {
     background-color: #EBF8FA;
     font-family: 'Arial', cursive;
