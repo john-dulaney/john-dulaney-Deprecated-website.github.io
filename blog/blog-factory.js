@@ -51,7 +51,16 @@ let fourOct2017 = {
     "content": 'Wheelchair Basketball tonight, very tired!'
   }
 
-let myBlog = [ elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
+  let eighteenOct2017 = {
+    "title": 'Hump day 3',
+    "date": 'Wednesday October 18, 2017',    
+    "tags": 'okay',
+    "author": 'John Dulaney',
+    "content": 'Long time no post. Spent last week working with 2 different groups on 2 different websites. I learned quite alot, especially that I need to catch up to some people in terms of JS knowledge. Some people I worked with had outstanding knowledge and they should be proud of their current progress. No basketball tonight, but I for sure am going for a long push, 6 mile route, game chair?'
+  }
+
+
+let myBlog = [eighteenOct2017, elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
 
 let blogsdb = {
   "myBlog": myBlog,

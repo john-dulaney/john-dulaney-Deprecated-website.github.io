@@ -18,6 +18,7 @@
              <div>${detail.date}</div>
              <div>${detail.tags}</div>
              <div>${detail.author}</div>
+             <hr>
              <div>${detail.content}</div>
          </section>
          <br>
