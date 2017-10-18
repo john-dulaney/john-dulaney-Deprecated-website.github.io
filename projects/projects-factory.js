@@ -3,21 +3,27 @@
 
 let projOneObject = {
     "name": 'Website',
-    "dateCompleted": 'None',
+    "url":'https://github.com/odn86/odn86.github.io',
+    "description":'This website you are currently on is one of my starting projects at Nashville Software School. It will continue to grow as my knowledge of programming expands. I intend to keep this bad boy updated.',
+    "dateCompleted": 'Working on it',
     "techUsed": 'HTML, JS, CSS',
     "teammates": 'None',
   }
 
   let projTwoObject = {
     "name": 'Class Work',
-    "dateCompleted": 'None',
+    "url":'https://github.com/odn86/javascript',
+    "description":'These are a few exercises assigned by NSS instructors to help use practice certain skills. Paired with the team oriented website building practice, I am developing a great working knowledge of the industry.',
+    "dateCompleted": 'Working on it',
     "techUsed": 'HTML, JS, CSS',
     "teammates": 'None',
   } 
 
   let projThreeObject = {
     "name": 'Capstone',
-    "dateCompleted": 'None',
+    "url":'',
+    "description":'We are 100% on the demands of this project yet, but we have seen our sister cohorts examples. Something along the lines of our own Application! Sounds fun.',
+    "dateCompleted": 'Have not begun',
     "techUsed": 'Everything',
     "teammates": 'None',
   }

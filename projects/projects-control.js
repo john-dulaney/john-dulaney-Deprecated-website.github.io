@@ -20,14 +20,18 @@ for (var key in storedProjects) {
 
 
 projectsEl.innerHTML += `
-    <section class="${key}">
-    <div class="container" id="text-block">
-        <h1>${detail.name}</h1>
-            <p>${detail.dateCompleted}</p>
-            <p>${detail.techUsed}</p>
-            <p>${detail.teammates}</p>
+    <section id="text-block" class="${key} container">
+    <h2>This ${detail.name}</h2>
+        <div class="col-10 align-self-center container">
+        
+            <p><a href="${detail.url}">Link to the Project</a></p>
+            <p>${detail.description}</p>
+            <p>Is it complete? ${detail.dateCompleted}</p>
+            <p>Technology used: ${detail.techUsed}</p>
+            <p>Teammates involved: ${detail.teammates}</p>
                 
-     </div>
+        </div>
+     </section>
                 `
 
 }
