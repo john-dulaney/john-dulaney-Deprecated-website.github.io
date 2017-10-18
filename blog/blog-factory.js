@@ -51,43 +51,19 @@ let fourOct2017 = {
     "content": 'Wheelchair Basketball tonight, very tired!'
   }
 
+  let eighteenOct2017 = {
+    "title": 'Hump day 3',
+    "date": 'Wednesday October 18, 2017',    
+    "tags": 'okay',
+    "author": 'John Dulaney',
+    "content": 'Long time no post. Spent last week working with 2 different groups on 2 different websites. I learned quite alot, especially that I need to catch up to some people in terms of JS knowledge. Some people I worked with had outstanding knowledge and they should be proud of their current progress. No basketball tonight, but I for sure am going for a long push, 6 mile route, game chair?'
+  }
 
 
-let rough = [fourOct2017, nineOct2017]
-let okay = [sixOct2017, elevenOct2017]
-let fun =[fiveOct2017, tenOct2017]
+let myBlog = [eighteenOct2017, elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
 
 let blogsdb = {
-  "rough": rough,
-  "okay": okay,
-  "fun": fun
+  "myBlog": myBlog,
 }
-
 const blogsString = JSON.stringify(blogsdb)
 localStorage.setItem("blogs", blogsString)
-
- //P O P U L A T E
-
- const blogs = JSON.parse(localStorage.getItem("blogs"))
- const blogEl = document.getElementsByClassName("blogs")[0]
- 
- for (var key in blogs) {
-     // if (homeInventory.hasOwnProperty(key)) {
-         const currentBlog = blogs[key];
-         for (var i = 0; i < currentBlog.length; i++) {
-             var detail = currentBlog[i];
-             
- 
-             blogEl.innerHTML += `
-         <section class="${key}">
-             <h2><strong>${detail.title}</strong></h2>
-             <div>${detail.date}</div>
-             <div>${detail.tags}</div>
-             <div>${detail.author}</div>
-             <div>${detail.content}</div>
-         </section>
-         <br>
-             
-             `    
-         }
- }

@@ -26,12 +26,16 @@ let fmObject = {
   }
  
 
-// Vague attempt(s) to store it
-  const fmString = JSON.stringify(fmObject)
-  localStorage.setItem("The Fresh Market", fmString)
-
-  const armyString = JSON.stringify(armyObject)
-  localStorage.setItem("United States Army", armyString)
-
-  const noJobString = JSON.stringify(noJobObject)
-  localStorage.setItem("Unemployed", noJobString)
+  const jobsArray = [fmObject, armyObject, noJobObject];
+  
+  
+  let jobsdb = {
+    "jobs": jobsArray,
+  }
+  
+  //create array of objects into jobs
+  // jobs.push(O B J E C T S);
+  
+  //pushing to local storage
+  const jobstring = JSON.stringify(jobsdb);
+  localStorage.setItem("jobs", jobstring);
