@@ -1,34 +1,37 @@
 
-// name, date completed, technologies used, teammates (if applicable).
+// name, date completed, techUsed, teammates (if applicable).
 
 let projOneObject = {
     "name": 'Website',
-    "date completed": 'None',
-    "technologies used": 'HTML, JS, CSS',
+    "dateCompleted": 'None',
+    "techUsed": 'HTML, JS, CSS',
     "teammates": 'None',
   }
 
   let projTwoObject = {
     "name": 'Class Work',
-    "date completed": 'None',
-    "technologies used": 'HTML, JS, CSS',
+    "dateCompleted": 'None',
+    "techUsed": 'HTML, JS, CSS',
     "teammates": 'None',
   } 
 
   let projThreeObject = {
     "name": 'Capstone',
-    "date completed": 'None',
-    "technologies used": 'Everything',
+    "dateCompleted": 'None',
+    "techUsed": 'Everything',
     "teammates": 'None',
   }
 
+const projectsArray = [projOneObject, projTwoObject, projThreeObject];
 
-// Vague attempt(s) to store it
-  const projOneString = JSON.stringify(projOneObject)
-  localStorage.setItem("The Fresh Market", projOneString)
 
-  const projTwoString = JSON.stringify(projTwoObject)
-  localStorage.setItem("United States Army", projTwoString)
+let projectsdb = {
+  "projects": projectsArray,
+}
 
-  const projThreeString = JSON.stringify(projThreeObject)
-  localStorage.setItem("Unemployed", projThreeString)
+//create array of objects into projects
+// projects.push(O B J E C T S);
+
+//pushing to local storage
+const projectstring = JSON.stringify(projectsdb);
+localStorage.setItem("projects", projectstring);
