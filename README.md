@@ -1,4 +1,4 @@
-# odn86.github.io
+# John Dulaney's Website
 
 Repo for my personal site. General mess at all times, as is tradition.
 
