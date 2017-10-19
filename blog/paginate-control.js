@@ -7,7 +7,7 @@
  const buttonEl = document.getElementsByClassName("buttons")[0]
  
 //Wrapper for the iterated buttons
-let paginationString = `<input type="button" class="buttstyle" id="previous" onclick="previousPage()" value="previous" />` 
+let paginationString = `<input type="button" class="buttstyle" id="previous" onclick="previousPage()" value="&lt" />` 
 buttonEl.innerHTML +=  paginationString
 
 for (var key in buttons) {
@@ -20,5 +20,5 @@ for (var key in buttons) {
              `    
          }
  }
- buttonEl.innerHTML += `<input type="button" class="buttstyle" id="next" onclick="nextPage()" value="next" />`
+ buttonEl.innerHTML += `<input type="button" class="buttstyle" id="next" onclick="nextPage()" value="&gt" />`
  
