@@ -18,6 +18,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> 
+        <a class="navbar-brand" href="../index.html">John Dulaney</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" id="nav">
 
@@ -27,11 +28,29 @@
     
    <!-- content  -->
     <br>
-    <article id="text-block" class="blogs col-10 align-self-center">
+    <article id="text-block" class="blogs col-10 align-self-center container">
         <h1>My "blog"</h1>
-        <br>
-        <br>
+        
+
+        <div class="page"  id="pagination-bar">
+                <input type="button" class="buttstyle" id="previous" onclick="previousPage()" value="previous" />
+                <input type="button" class ="paginatorPageNumber buttstyle" id="1" onclick="pageJump(1)" value="1" />
+                <input type="button" class ="paginatorPageNumber buttstyle" id="2" onclick="pageJump(2)" value="2" />
+                <input type="button" class ="paginatorPageNumber buttstyle" id="3" onclick="pageJump(3)" value="3" />
+                <input type="button" class ="paginatorPageNumber buttstyle" id="4" onclick="pageJump(4)" value="4" />
+                <input type="button" class ="paginatorPageNumber buttstyle" id="5" onclick="pageJump(5)" value="5" />
+                <input type="button" class="buttstyle" id="next" onclick="nextPage()" value="next" />
+        </div>
+        <!-- <br>
+        <br> -->
     </article>
+    <article>
+        <ul id="blog-ul" class="" style="list-style: none;">
+                <!-- ¯\_(ツ)_/¯ -->
+        </ul>
+
+
+        </article>
 </body>
 <footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -40,7 +59,7 @@
     <script src="../nav-factory.js"></script>
     <script src="../nav-controller.js"></script> 
     <script src="./blog-factory.js"></script>  
-    <script src="./blog-control.js"></script>        
+    <script src="./blog-control.js"></script> 
     <script src="../lightbox.js"></script>    
  </footer>
 </html>
