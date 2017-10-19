@@ -60,7 +60,44 @@ let fourOct2017 = {
   }
 
 
-let myBlog = [eighteenOct2017, elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
+  let nineteenOct2017 = {
+    "title": 'Pagination Nation',
+    "date": 'THursday October 19, 2017',    
+    "tags": 'Success!',
+    "author": 'John Dulaney',
+    "content": "Today we tackled Some pretty crazy Javascript. We hit generator functions as well as the Steve way of making a paginator, which is pretty insane. It's crazy the amount of work and code it takes to make some stupid buttons iterate through pages of conent, grey out at the right times, as well as do this all with buttons. I learned alot, but pulled most my code from a previous project. I'm not where I need to be ijn this class yet."
+  }
+  // let Oct2017 = {
+  //   "title": '',
+  //   "date": 'x October x, 2017',    
+  //   "tags": '',
+  //   "author": 'John Dulaney',
+  //   "content": ''
+  // }
+  // let Oct2017 = {
+  //   "title": '',
+  //   "date": 'x October x, 2017',    
+  //   "tags": '',
+  //   "author": 'John Dulaney',
+  //   "content": ''
+  // }
+  // let Oct2017 = {
+  //   "title": '',
+  //   "date": 'x October x, 2017',    
+  //   "tags": '',
+  //   "author": 'John Dulaney',
+  //   "content": ''
+  // }
+  // let Oct2017 = {
+  //   "title": '',
+  //   "date": 'x October x, 2017',    
+  //   "tags": '',
+  //   "author": 'John Dulaney',
+  //   "content": ''
+  // }
+
+
+let myBlog = [nineteenOct2017, eighteenOct2017, elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
 
 let blogsdb = {
   "myBlog": myBlog,

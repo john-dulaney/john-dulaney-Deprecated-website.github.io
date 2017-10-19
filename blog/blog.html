@@ -5,7 +5,6 @@
         <link href="../styles.css" rel="stylesheet">
         <link href="../lightbox.css" rel="stylesheet">
         <link href="./blog.css" rel="stylesheet">          
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -30,19 +29,9 @@
     <br>
     <article id="text-block" class="blogs col-10 align-self-center container">
         <h1>My "blog"</h1>
-        
-
-        <div class="page"  id="pagination-bar">
-                <input type="button" class="buttstyle" id="previous" onclick="previousPage()" value="previous" />
-                <input type="button" class ="paginatorPageNumber buttstyle" id="1" onclick="pageJump(1)" value="1" />
-                <input type="button" class ="paginatorPageNumber buttstyle" id="2" onclick="pageJump(2)" value="2" />
-                <input type="button" class ="paginatorPageNumber buttstyle" id="3" onclick="pageJump(3)" value="3" />
-                <input type="button" class ="paginatorPageNumber buttstyle" id="4" onclick="pageJump(4)" value="4" />
-                <input type="button" class ="paginatorPageNumber buttstyle" id="5" onclick="pageJump(5)" value="5" />
-                <input type="button" class="buttstyle" id="next" onclick="nextPage()" value="next" />
+        <div class="buttons page btn-group"  id="pagination-bar">
+                <!-- ¯\_(ツ)_/¯ -->
         </div>
-        <!-- <br>
-        <br> -->
     </article>
     <article>
         <ul id="blog-ul" class="" style="list-style: none;">
@@ -58,6 +47,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="../nav-factory.js"></script>
     <script src="../nav-controller.js"></script> 
+    <script src="./paginate-factory.js"></script> 
+    <script src="./paginate-control.js"></script> 
     <script src="./blog-factory.js"></script>  
     <script src="./blog-control.js"></script> 
     <script src="../lightbox.js"></script>    
