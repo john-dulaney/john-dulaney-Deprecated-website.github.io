@@ -25,7 +25,7 @@ jobsEl.innerHTML += `
         <h1>${detail.title}</h1>
             <p>${detail.company}</p>
             <p>${detail.dates}</p>
-            <p>${detail.responsibilities    }</p>
+            <p>${detail.responsibilities}</p>
                 
      </div>
                 `
