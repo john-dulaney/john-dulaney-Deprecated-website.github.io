@@ -6,4 +6,5 @@ Messages for NSS staff  //////  Changelog :
 
 Date      -       Time    -     Comment
 ==============================================================================================================================
+19OCT17   -       14:28   -     Pagination in blog working, nothing styled.
 19OCT17   -       13:28   -     Most tickets barely complete. Currently working on a functioning Paginate.
