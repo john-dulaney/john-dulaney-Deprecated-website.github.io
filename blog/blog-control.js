@@ -13,7 +13,7 @@
              
  
              blogEl.innerHTML += `
-         <section class="${key} container">
+         <section id="text-block" class="${key} col-10 align-self-center container">
              <h2><strong>${detail.title}</strong></h2>
              <div>${detail.date}</div>
              <div>${detail.tags}</div>
