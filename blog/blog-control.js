@@ -92,15 +92,4 @@ window.onload = load()
 
 
 
- //let stockSelectOptions = ``;
-        // for (var s = 1; s <= detail.select; s++) {
-        //     stockSelectOptions += `<h1>TEST</h1>`;
-        // }
-
-// function productModal() {
-//     document.getElementById("modal").style.display = "block"
-// }
-
-// document.getElementById("closeModal").onclick = function() {
-//     document.getElementById('modal').style.display = "none";
-// }
+document.getElementById("searchDoc")

@@ -22,3 +22,6 @@ for (var key in buttons) {
  }
  buttonEl.innerHTML += `<input type="button" class="buttstyle" id="next" onclick="nextPage()" value="&gt" />`
  
+
+
+ 

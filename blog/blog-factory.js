@@ -62,42 +62,38 @@ let fourOct2017 = {
 
   let nineteenOct2017 = {
     "title": 'Pagination Nation',
-    "date": 'THursday October 19, 2017',    
+    "date": 'Thursday October 19, 2017',    
     "tags": 'Success!',
     "author": 'John Dulaney',
     "content": "Today we tackled Some pretty crazy Javascript. We hit generator functions as well as the Steve way of making a paginator, which is pretty insane. It's crazy the amount of work and code it takes to make some stupid buttons iterate through pages of conent, grey out at the right times, as well as do this all with buttons. I learned alot, but pulled most my code from a previous project. I'm not where I need to be ijn this class yet."
   }
+ 
+  let twentyOct2017 = {
+    "title": 'Reindeer Games',
+    "date": 'Friday October 20, 2017',    
+    "tags": 'tired, Ben Affleck',
+    "author": 'John Dulaney',
+    "content": "Stayed up till 1 am last night working on some exercises. Would have been in bed at 9:30 if Steve hadnt have slacked me about my incomplete exercises. I'm still afraid I'm not picking this stuff up as quick as some of my peers. Reindeer Exercise looming and I dont know where to start. Bright side is I knocked out some CSS ex in like an hour. Very tired, ready for the weekend!"
+  }
+
+    let twentyFourOct2017 = {
+    "title": 'Piles upon Piles',
+    "date": 'Tuesday October 24, 2017',    
+    "tags": 'Wew',
+    "author": 'John Dulaney',
+    "content": "Would have written yesterday but wayyyyy too much work. The worst part is knowing that you spend 30-40 minutes just getting a line or two completed rather than pages of working code. Really spinning my wheels on quite a few concepts. It's all on me as far as practice and attention to detail go i guess. Primus concert tonight, so tired and full of back pain might not go."
+  }
   // let Oct2017 = {
-  //   "title": '',
-  //   "date": 'x October x, 2017',    
-  //   "tags": '',
-  //   "author": 'John Dulaney',
-  //   "content": ''
-  // }
-  // let Oct2017 = {
-  //   "title": '',
-  //   "date": 'x October x, 2017',    
-  //   "tags": '',
-  //   "author": 'John Dulaney',
-  //   "content": ''
-  // }
-  // let Oct2017 = {
-  //   "title": '',
-  //   "date": 'x October x, 2017',    
-  //   "tags": '',
-  //   "author": 'John Dulaney',
-  //   "content": ''
-  // }
-  // let Oct2017 = {
-  //   "title": '',
-  //   "date": 'x October x, 2017',    
-  //   "tags": '',
-  //   "author": 'John Dulaney',
-  //   "content": ''
+  //   "title": "",
+  //   "date": "x October x, 2017",    
+  //   "tags": "",
+  //   "author": "John Dulaney",
+  //   "content": ""
   // }
 
 
-let myBlog = [nineteenOct2017, eighteenOct2017, elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
+
+let myBlog = [twentyFourOct2017, twentyOct2017, nineteenOct2017, eighteenOct2017, elevenOct2017, tenOct2017, nineOct2017, sixOct2017, fiveOct2017, fourOct2017] 
 
 let blogsdb = {
   "myBlog": myBlog,

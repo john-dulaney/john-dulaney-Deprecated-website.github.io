@@ -6,22 +6,22 @@ const home = {
 
 const resume = {
     'name' : 'Resume',
-    'link' : "../resume/resume.html"
+    'link' : "../resume/index.html"
 }
 
 const blog = {
     'name' : 'Blog',
-    'link' : "../blog/blog.html"
+    'link' : "../blog/index.html"
 }
 
 const contact = {
     'name' : 'Contact',
-    'link' : "../contact/contact.html"
+    'link' : "../contact/index.html"
 }
 
 const projects = {
     'name' : 'Projects',
-    'link' : "../projects/projects.html"
+    'link' : "../projects/index.html"
 }
 
 //create blank nav bar array
