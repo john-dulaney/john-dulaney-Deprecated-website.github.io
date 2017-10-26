@@ -1,0 +1,32 @@
+label {
+    margin-top: 20px;
+}
+
+#articleForm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#articleForm__body {
+    /* width%; */
+    height: 150px;
+}
+
+#articleForm__save {
+    margin-top: 40px;
+    flex-shrink: 1;
+    text-align: center;
+}
+
+.small-input {
+    width: 300px 
+        
+    }
+
+textarea {
+    height: 150px
+}
+/* .admin-style {
+
+} */
