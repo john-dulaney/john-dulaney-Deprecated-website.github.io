@@ -42,6 +42,7 @@ function pageJump(a) {
 // this will calculate which items appear on each page
 function loadList() {
     // Enable / disable page button
+
     for (let index = 0; index < pageNumberButtons.length; index++) {
         if (currentPage == pageNumberButtons[index].value){
             pageNumberButtons[index].disabled = true
@@ -62,21 +63,25 @@ function loadList() {
 
 // innerHTML to write to DOM for each page
 function drawList() {
+    // pageList = pageList.reverse()
+    // pageList.sort((n, p) => n.id - p.id)
     
     document.getElementById("blog-ul").innerHTML = ""
     for (r = 0; r < pageList.length; r++) {
         let detail = pageList[r]
         
         document.getElementById("blog-ul").innerHTML += `
+        <article id=${detail.id}>
         <li id="text-block" class="col-10 align-self-center container">
         <h2><strong>${detail.title}</strong></h2>
         <div>${detail.date}</div>
         <div>${detail.tags}</div>
         <div>${detail.author}</div>
-            <hr>
+        <hr>
         <div>${detail.content}</div>
         </li>
-            <br>
+        <br>
+        </article>
         `
     }
 }

@@ -23,6 +23,10 @@ const projects = {
     'name' : 'Projects',
     'link' : "../projects/index.html"
 }
+// const admin = {
+//     'name' : 'Admin',
+//     'link' : "../admin/index.html"
+// }
 
 //create blank nav bar array
 const navBar = [];
