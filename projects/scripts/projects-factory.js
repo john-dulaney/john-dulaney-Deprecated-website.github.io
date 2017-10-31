@@ -12,7 +12,7 @@ let projOneObject = {
 
   let projTwoObject = {
     "name": 'Class Work',
-    "url":'https://github.com/odn86/javascript',
+    "url":'https://github.com/odn86/exercises',
     "description":'These are a few exercises assigned by NSS instructors to help use practice certain skills. Paired with the team oriented website building practice, I am developing a great working knowledge of the industry.',
     "dateCompleted": 'Working on it',
     "techUsed": 'HTML, JS, CSS',
@@ -41,3 +41,5 @@ let projectsdb = {
 //pushing to local storage
 const projectstring = JSON.stringify(projectsdb);
 localStorage.setItem("projects", projectstring);
+
+

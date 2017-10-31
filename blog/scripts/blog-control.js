@@ -2,6 +2,7 @@
 //brilliant additions to site code added by chris and paul from the Confused Camels. Those guys are great.
 
 let list = (JSON.parse(localStorage.getItem("blogs"))).myBlog
+list.sort((p, n) => {return n.id - p.id})
 // let list = new Array();
 let pageList = [];
 let currentPage = 1;
@@ -65,15 +66,15 @@ function loadList() {
 function drawList() {
     // pageList = pageList.reverse()
     // pageList.sort((n, p) => n.id - p.id)
-    
+
     document.getElementById("blog-ul").innerHTML = ""
     for (r = 0; r < pageList.length; r++) {
         let detail = pageList[r]
         
         document.getElementById("blog-ul").innerHTML += `
         <article id=${detail.id}>
-        <li id="text-block" class="col-10 align-self-center container">
         <h2><strong>${detail.title}</strong></h2>
+        <li id="text-block" class="col-10 align-self-center container">
         <div>${detail.date}</div>
         <div>${detail.tags}</div>
         <div>${detail.author}</div>

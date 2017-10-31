@@ -26,21 +26,19 @@
     
         </nav>
        
-  <header class="col-10 align-self-center">
+        
+        <section class="col-10 align-self-center" id="articleForm">
     <h1>Create Blog Article</h1>
-  </header>
-
-  <section class="col-10 align-self-center" id="articleForm">
-    <label>Title</label>
-    <input type="text" class="small-input" name="articleForm__title" placeholder="Title">
-    <label>Date</label>
-    <input type="date" class="small-input" name="articleForm__date" placeholder="Today's Date" width="100px">
-    <label>Tags</label>
-    <input type="text" class="small-input" name="articleForm__tags" placeholder="Relevant tags">
-    <label>Author</label>
-    <input type="text" class="small-input" name="articleForm__author" placeholder="Your name here">
-    <label>Contents</label>
-    <textarea name="articleForm__body" placeholder="What's up?"></textarea>
+      <label>Title</label>
+      <input type="text" class="small-input" name="articleForm__title" placeholder="Title">
+      <label>Date</label>
+      <input type="date" class="small-input" name="articleForm__date" placeholder="Today's Date" width="100px">
+      <label>Tags</label>
+      <input type="text" class="small-input" name="articleForm__tags" placeholder="Relevant tags">
+      <label>Author</label>
+      <input type="text" class="small-input" name="articleForm__author" placeholder="Your name here">
+      <label>Content</label>
+      <textarea name="articleForm__body" placeholder="What's up?"></textarea>
 
 
     <div class="col-10 align-self-center" id="articleForm__save">
@@ -51,23 +49,12 @@
 
 
   </section>
-  <section class="col-10 admin-style" id="articleForm">
-    <h1>Create a New project</h1>
-    <label>Title</label>
-    <input type="text" name="articleForm__title" placeholder="Title of new project">
-   
-
-    <label>Contents</label>
-    <textarea name="articleForm__content" placeholder="New project description here"></textarea>
-
-    <div class="col-10 align-self-center" id="articleForm__save">
-        <button id="articleForm__saveButton">Save Project</button>
-        <p>*Once saved this information will be in local storage! dont clear your browser without first backing up!!</p>
-    </div>
-    </section>
 <footer>
-    <a href="../admin/index.html">Admin</a>
-
+  <div class="footer">
+  <p>Admin pages</p>
+    <a href="../admin/blog.html">Blog Form</a>
+    <a href="../admin/projects.html">Project Form</a>
+  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -78,3 +65,4 @@
 </footer>
 </body>
 </html>
+

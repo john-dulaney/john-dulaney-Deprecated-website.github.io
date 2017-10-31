@@ -10,7 +10,7 @@ console.log("cells within cells interlinked, interlinked")
     blogs.myBlog = blogs.myBlog || []
 
     // Sort the myBlog by their `id` property, descending
-    // blogs.myBlog.sort((p, n) => p.id - n.id)
+    // blogs.myBlog.sort((p, n) => {return n.id - p.id})
 
     // Generator function definition
     const idGenerator = function* (from) {
@@ -71,7 +71,7 @@ const saveButtonEl = document.getElementById("articleForm__saveButton")
         )
 
         // Add new article to array
-        blogs.myBlog.unshift(newArticle)
+        blogs.myBlog.push(newArticle)
 
         // Serialize and store database
 

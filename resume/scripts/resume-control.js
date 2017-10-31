@@ -21,7 +21,7 @@ for (var key in storedjobs) {
 
 jobsEl.innerHTML += `
     <section class="${key}">
-    <div class="container" id="text-block">
+    <div class="col-10 align-self-center container" id="text-block">
         <h1>${detail.title}</h1>
             <p>${detail.company}</p>
             <p>${detail.dates}</p>

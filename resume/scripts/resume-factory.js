@@ -12,9 +12,9 @@ let fmObject = {
   }
 
   let armyObject = {
-    "title": 'Platoon Leader',
+    "title": 'Private, Cadet, Platoon Leader',
     "company": 'Missouri National Guard',
-    "dates": '2007-2012',
+    "dates": '2007-2010',
     "responsibilities": 'Ensure my platoon of 36 men were as lethal as possible and that all the needs of my commanders were met',
   }
 
