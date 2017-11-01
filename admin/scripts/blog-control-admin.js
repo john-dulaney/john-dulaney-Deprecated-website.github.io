@@ -74,10 +74,6 @@ const saveButtonEl = document.getElementById("articleForm__saveButton")
         blogs.myBlog.push(newArticle)
         
         // Serialize and store database
-        
-        // reverse order our new array. This doesnt work
-        // blogs.myBlog.sort((p, n) => p.id - n.id) 
-        
         // store information into our local DB
         localStorage.setItem("blogs", JSON.stringify(blogs))
         document.forms["blog--form"].reset();

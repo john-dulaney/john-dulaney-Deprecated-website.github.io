@@ -28,23 +28,37 @@
 
     <section class="col-10 admin-style align-self-center" id="articleForm">
         <h1>Create a New project</h1>
+        <form action="" name="project--form">
+            <br>
             <label>Title</label>
+            <br>
             <input type="text" class="small-input" name="projectForm__title" placeholder="Title of new project">
+            <br>
             <label>Link</label>    
+            <br>
             <input type="text" class="small-input" name="projectForm__link" placeholder="Link">
+            <br>
             <label>Date Completed</label>
+            <br>
             <input type="date" class="small-input" name="projectForm__date" placeholder="Date Completed" width="100px">
+            <br>
             <label>Technology Used</label>
+            <br>
             <input type="text" class="small-input" name="projectForm__tech" placeholder="Tech/Languages Used">
+            <br>
             <label>Teammates</label>
+            <br>
             <input type="text" class="small-input" name="projectForm__team" placeholder="Any Contributers or Teammates">
+            <br>
             <label>Content</label>
+            <br>
             <textarea name="projectForm__body" placeholder="New project description here"></textarea>
-
-        <div class="col-10 align-self-center" id="projectForm__save">
-            <button id="projectForm__saveButton">Save Project</button>
-            <p>*Once saved this information will be in local storage! dont clear your browser without first backing up!!</p>
-        </div>
+            
+            <div class="col-10 align-self-center" id="projectForm__save">
+                <button id="projectForm__saveButton">Save Project</button>
+                <p>*Once saved this information will be in local storage! dont clear your browser without first backing up!!</p>
+            </div>
+        </form>
         </section>
     <footer>
     <div class="footer">

@@ -9,9 +9,6 @@
         // Create `myProject` key if it doesn't exist
         projects.myProject = projects.myProject || []
     
-        // Sort the myProject by their `id` property, descending
-        // projects.myProject.sort((p, n) => p.id - n.id)
-    
         // Generator function definition
         const idGenerator = function* (from) {
             let id = 1
@@ -85,6 +82,8 @@
     
             // store information into our local DB
             localStorage.setItem("projects", JSON.stringify(projects))
+            document.forms["project--form"].reset();
+            
         })
     
     

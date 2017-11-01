@@ -1,12 +1,17 @@
 // Are there any articles? If so, add articles to DOM
 
-let blist = (JSON.parse(localStorage.getItem("blogs"))).myBlog
-blist.sort((p, n) => {return n.id - p.id})
+let bList = (JSON.parse(localStorage.getItem("blogs"))).myBlog
+bList.sort((p, n) => {return n.id - p.id})
 
-blist.articles = blist.articles || []
-if (blist.articles.length) {
+bList.articles = bList.articles || []
+
+
+
+
+if (bList.articles.length) {
     const articleEl = document.getElementById("blog-ul")
 
+    
     // For displaying single articles
     const updateDOM = (article) => {
         articleEl.innerHTML += `
@@ -24,42 +29,45 @@ if (blist.articles.length) {
         `
     }
 
+  }
+
+  let x = 1
     
 // Sort the articles by id, descending, and inject into the DOM
-// Some sort of function that the Wizard Steve conjured in a cauldron high in a castle in the woods.
-    const displayArticles = () => {
-        articleEl.innerHTML = ""
+// Some sort of function that the Wizard Steve conjured in a cauldron high in a castle on a mountain somewhere.
+//     const displayArticles = () => {
+//         articleEl.innerHTML = ""
+//         bList.articles
+//         .forEach(function (article) {
+//             updateDOM(article)
+//         })
+//     }
+//     // .sort((p, n) => n.id - p.id)
 
-        blist.articles
-        .forEach(function (article) {
-            updateDOM(article)
-        })
-    }
-    // .sort((p, n) => n.id - p.id)
+//     displayArticles()
 
-    displayArticles()
+//     document.querySelector("input[name='search']").addEventlistener(
+//         "keyup", event => {
+//             if (event.target.value.length >= 3) {
 
-    document.querySelector("input[name='search']").addEventblistener(
-        "keyup", event => {
-            if (event.target.value.length >= 3) {
+//                 // Filter all the things
+//                 const userFilterString = event.target.value.toLowerCase()
+//                 const filteredArticles = bList.articles.filter(
+//                     article => {
+//                         return article.title.toLowerCase().includes(userFilterString) ||
+//                                article.body.toLowerCase().includes(userFilterString)
+//                     }
+//                 )
 
-                // Filter all the things
-                const userFilterString = event.target.value.toLowerCase()
-                const filteredArticles = blist.articles.filter(
-                    article => {
-                        return article.title.toLowerCase().includes(userFilterString) ||
-                               article.body.toLowerCase().includes(userFilterString)
-                    }
-                )
+//                 // Clear the DOM first
+//                 articleEl.innerHTML = ""
 
-                // Clear the DOM first
-                articleEl.innerHTML = ""
+//                 // Display only filtered articles
+//                 filteredArticles.forEach( article => updateDOM(article) )
+//             } else {
+//                 displayArticles()
+//             }
+//         }
+//     )
+// }
 
-                // Display only filtered articles
-                filteredArticles.forEach( article => updateDOM(article) )
-            } else {
-                displayArticles()
-            }
-        }
-    )
-}
