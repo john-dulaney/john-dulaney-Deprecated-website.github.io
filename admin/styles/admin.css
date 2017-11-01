@@ -24,6 +24,10 @@ label {
         
     }
 
+form {
+    text-align: center;
+}
+
 textarea {
     height: 150px
 }

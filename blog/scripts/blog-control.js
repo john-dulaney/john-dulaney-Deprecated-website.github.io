@@ -95,7 +95,4 @@ function check() {
 }
 window.onload = load()
 
-
-
-
 document.getElementById("searchDoc")
