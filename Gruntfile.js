@@ -60,8 +60,12 @@ module.exports = function(grunt) {
                         ext: '.min.js'
                     }]
                 }
-            }
-        });
+            },
+            eslint: {
+                    all: ['**/*.js']
+                    
+                  }
+            });
     
         // Load the plugin that provides the "uglify" task.
         grunt.loadNpmTasks('grunt-contrib-uglify');
