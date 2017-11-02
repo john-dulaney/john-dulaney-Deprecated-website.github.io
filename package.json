@@ -1,0 +1,28 @@
+{
+  "name": "odn86.github.io",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odn86/odn86.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "site"
+  ],
+  "author": "John Dulaney <john.s.dulaney1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/odn86/odn86.github.io/issues"
+  },
+  "homepage": "https://github.com/odn86/odn86.github.io#readme"
+}
