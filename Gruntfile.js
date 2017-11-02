@@ -31,9 +31,11 @@ module.exports = function(grunt) {
         // Load the plugin that provides the "uglify" task.
         grunt.loadNpmTasks('grunt-contrib-uglify');
         grunt.loadNpmTasks('grunt-contrib-watch');
+        grunt.loadNpmTasks('eslint-grunt');
+        
         
     
         // Default task(s).
-        grunt.registerTask('default', ['uglify', 'watch']);
+        grunt.registerTask('default', ['uglify', 'watch', 'eslint']);
     
     };
