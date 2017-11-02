@@ -12,6 +12,10 @@ module.exports = function(grunt) {
                   },
                 }
             },
+            eslint: {
+                all: ['./scripts/*.js', 'contact/scripts/*.js', 'projects/scripts/*.js', 'blog/scripts/*.js', 'admin/scripts/*.js', 'resume/scripts/*.js']
+                    
+              },
             uglify: {
                 options: {
                     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -60,21 +64,17 @@ module.exports = function(grunt) {
                         ext: '.min.js'
                     }]
                 }
-            },
-            eslint: {
-                    all: ['**/*.js']
-                    
-                  }
+            }
             });
     
         // Load the plugin that provides the "uglify" task.
         grunt.loadNpmTasks('grunt-contrib-uglify');
         grunt.loadNpmTasks('grunt-contrib-watch');
-        grunt.loadNpmTasks('eslint-grunt');
+        grunt.loadNpmTasks('grunt-eslint');
         
         
     
         // Default task(s).
-        grunt.registerTask('default', ['uglify', 'watch', 'eslint']);
+        grunt.registerTask('default', ['uglify', 'eslint', 'watch']);
     
     };

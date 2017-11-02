@@ -13,7 +13,7 @@ buttonEl.innerHTML +=  paginationString
 for (var key in buttons) {
      // if (homeInventory.hasOwnProperty(key)) {
          const currentButtons = buttons[key];
-         for (var i = 0; i < currentButtons.length; i++) {
+          for (var i = 0; i < currentButtons.length; i++) {
              var detail = currentButtons[i];
              buttonEl.innerHTML +=  `
              <input type="button" class ="paginatorPageNumber buttstyle" id="${detail.id}" onclick="${detail.onclick}" value="${detail.value}" />

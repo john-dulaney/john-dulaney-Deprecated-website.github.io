@@ -67,7 +67,7 @@ const saveButtonEl = document.getElementById("articleForm__saveButton")
             document.querySelector("input[name='articleForm__date']").value,
             document.querySelector("input[name='articleForm__tags']").value,
             document.querySelector("input[name='articleForm__author']").value,
-            document.querySelector("textarea[name='articleForm__body']").value,
+            document.querySelector("textarea[name='articleForm__body']").value
         )
         
         // Add new article to array

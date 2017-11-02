@@ -9,5 +9,4 @@ for (let i = 0; i < storedNavBar.length; i++) {
     navEl.innerHTML += `
     <a class="nav-item nav-link" href="${currentNav.link}">${currentNav.name}</a>
     `
-    
 }
