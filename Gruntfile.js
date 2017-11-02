@@ -23,6 +23,41 @@ module.exports = function(grunt) {
                         src: '*.js',
                         dest: 'build',
                         ext: '.min.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'blog/scripts',
+                        src: '*.js',
+                        dest: 'build',
+                        ext: '.min.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'contact/scripts',
+                        src: '*.js',
+                        dest: 'build',
+                        ext: '.min.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'admin/scripts',
+                        src: '*.js',
+                        dest: 'build',
+                        ext: '.min.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'projects/scripts',
+                        src: '*.js',
+                        dest: 'build',
+                        ext: '.min.js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'resume/scripts',
+                        src: '*.js',
+                        dest: 'build',
+                        ext: '.min.js'
                     }]
                 }
             }
