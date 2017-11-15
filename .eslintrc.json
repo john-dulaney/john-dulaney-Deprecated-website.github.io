@@ -19,8 +19,9 @@
         "require-jsdoc": 0,
         "no-multiple-empty-lines": 0,
         "space-before-blocks": 0,
-        "object-curly-spacing": 0
-        
+        "object-curly-spacing": 0,
+        "no-var": 0,
+        "guard-for-in": 1
     },
      "env": { "es6": true }     
 }

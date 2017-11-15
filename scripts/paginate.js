@@ -1,5 +1,5 @@
-console.log("pagination")
 //Code borrowed from the Warlock Steve. He killed several gnomes to enchant this grimoire.
+console.log("pagination")
 
 const paginate = (items, paginationElClass, outputElClass) => {
     const totalItems = items.length
@@ -107,3 +107,5 @@ const paginate = (items, paginationElClass, outputElClass) => {
     previousEl.addEventListener("click", produceArticles)
     nextEl.addEventListener("click", produceArticles)
 }
+
+module.exports = paginate
