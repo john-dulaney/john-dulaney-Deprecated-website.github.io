@@ -4,7 +4,7 @@ module.exports = function (grunt) {
       pkg: grunt.file.readJSON("package.json"),
       watch: {
         scripts: {
-          files: ["**/scripts/*.js", "!node_modules/**/*.js"],
+          files: ["**/scripts/*.js", "!node_modules/**/*.js", "**/admin/scripts*.js", "**/blog/scripts*.js", "**/contact/scripts*.js", "**/projects/scripts*.js", "**/resume/scripts*.js"],
           tasks: ["eslint", "browserify"],
           options: {
             spawn: false,
@@ -12,6 +12,12 @@ module.exports = function (grunt) {
         },
       },
       browserify: {
+        options: {
+          browserifyOptions: {
+              debug: true,
+              }
+          },
+
         dist: {
           files: {
             "build/bundle.js": ["scripts/main.js"],
@@ -33,8 +39,7 @@ module.exports = function (grunt) {
         },
       eslint: {
         src: [
-          "**/scripts/*.js",
-          "!node_modules/**/*.js",
+          "**/scripts/**/*.js", "!node_modules/**/*.js", "**/admin/scripts/*.js", "**/blog/scripts/*.js", "**/contact/scripts/*.js", "**/projects/script/s*.js", "**/resume/scripts/*.js"
         ],
       },
     });
