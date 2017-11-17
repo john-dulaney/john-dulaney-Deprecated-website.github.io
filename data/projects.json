@@ -1,0 +1,36 @@
+{
+    "myProjects": [{
+            "name": "Website",
+            "url": "https://github.com/odn86/odn86.github.io",
+            "description": "This website you are currently on is one of my starting projects at Nashville Software School. It will continue to grow as my knowledge of programming expands. I intend to keep this bad boy updated.",
+            "dateCompleted": "Working on it",
+            "techUsed": "HTML, JS, CSS",
+            "teammates": "None"
+        },
+        {
+            "name": "Class Work",
+            "url": "https://github.com/odn86/exercises",
+            "description": "These are a few exercises assigned by NSS instructors to help use practice certain skills. Paired with the team oriented website building practice, I am developing a great working knowledge of the industry.",
+            "dateCompleted": "Working on it",
+            "techUsed": "HTML, JS, CSS",
+            "teammates": "None"
+        },
+        {
+            "name": "Nutshell",
+            "url": "nutshell.chasesteely.com",
+            "description": "Nutshell is a psuedo social media single page app. It provided the user the ability to create tasks, add events, share news, and message other users(so long as they were on localhost.",
+            "dateCompleted": "Work in progress. 1.0 launched 15NOV17",
+            "techUsed": "HTML, JS, CSS, jQuery",
+            "teammates": "Chase Steely, Max Wolf, and Paul Ellis"
+        },
+
+        {
+            "name": "Capstone",
+            "url": "",
+            "description": "We are 100% on the demands of this project yet, but we have seen our sister cohorts examples. Something along the lines of our own Application! Sounds fun.",
+            "dateCompleted": "Have not begun",
+            "techUsed": "Everything",
+            "teammates": "None"
+        }
+    ]
+}
