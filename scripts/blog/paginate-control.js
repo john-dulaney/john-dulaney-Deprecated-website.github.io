@@ -17,5 +17,5 @@ buttonEl.innerHTML += paginationString
                 `
         }
     }
-}
+
 buttonEl.innerHTML += `<input type="button" class="buttstyle" id="next" onclick="nextPage()" value="&gt" />`
