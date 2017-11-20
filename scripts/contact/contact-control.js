@@ -1,35 +1,30 @@
-// P O P U L A T E
+// Author: John Dulaney
+// Purpose: This module grabs contact posts and prints them to the DOM
+// ┌(° ͜ʖ͡°)┘
 
-//PAULS WAY
-// const storedContact = JSON.parse(localStorage.getItem("Contact"));
-// const contactEl = document.getElementsByClassName("contact");
-// //loop through nav array
-// for (let i = 0; i < storedContact.length; i++) {
-//     let currentContact = storedContact[i];
-
-
-// ORIGINAL
-    const storedContact = JSON.parse(localStorage.getItem("Contact"))
-    const contactEl = document.getElementsByClassName("contact")[0]
-    
-    for (var key in storedContact) {
-            const currentContact = storedContact[key];
-            for (var i = 0; i < currentContact.length; i++) {
-                var detail = currentContact[i];
-                
-    
-
-    contactEl.innerHTML += `
-        <section class="${key}">
-        <div class="container" id="text-block">
-            <h1>${detail.name}</h1>
-                <p>${detail.username}</p>
-                <a href="${detail.url}"><img src="${detail.icon}" alt="" srcset="" height="32" width="32"></a>
-                    
-         </div>
+//set into a function for scope, ajax request the database for contacts
+const contactDOM = () => {$.ajax({url: "https://personal-site-ffb9c.firebaseio.com/contact.json"})
+    //assign .then to halt JS from executing before XHR returns with the data
+    .then(contact => {
+        //log our db for our poor dev
+        console.log(contact)
+            //grab the contact__list div from index.html
+            const contactEl = document.getElementsByClassName("contact__list")[0]
+            //clear out any unwanted stuff
+            contactEl.innerHTML = ""
+                // for each key in contact, print innerHTML
+                contact.forEach(c => {
+                    contactEl.innerHTML += `
+                    <section class="">
+                    <div class="container" id="text-block">
+                        <h1>${c.name}</h1>
+                            <p>${c.username}</p>
+                            <a href="${c.url}"><img src="${c.icon}" alt="" srcset="" height="32" width="32"></a>
+                    </div>
                     `
-    
-}
+                })
+            }
+        )
     }
-
-
+//exports
+module.exports = contactDOM

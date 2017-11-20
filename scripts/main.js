@@ -4,16 +4,22 @@
 
 // imports
 const db = require("./database")
+const navigationBarDOM = require("./nav/nav-control.js")
 const blogDOM = require("./blog/blog-control.js")
+const contactDOM = require("./contact/contact-control.js")
+const projectsDOM = require("./projects/projects-control.js")
+const resumeDOM = require("./resume/resume-control.js")
 
 
-const main = function(){
-       return blogDOM()
-
-
-
+const loadDOM = function(){
+    navigationBarDOM()
+    blogDOM()
+    contactDOM()
+    projectsDOM()
+    resumeDOM()
 }
-main()
+
+    loadDOM()
 
 // exports      
-module.exports = main
+module.exports = loadDOM    

@@ -1,39 +1,35 @@
-// P O P U L A T E
+// Author: John Dulaney
+// Purpose: This module grabs projects posts and prints them to the DOM
+// ┌(° ͜ʖ͡°)┘
 
-//PAULS WAY
-// const storedProjects = JSON.parse(localStorage.getItem("Projects"));
-// const projectsEl = document.getElementsByClassName("Projects");
-// //loop through nav array
-// for (let i = 0; i < storedProjects.length; i++) {
-//     let currentProjects = storedProjects[i];
-
-
-// ORIGINAL
-const storedProjects = JSON.parse(localStorage.getItem("projects"))
-const projectsEl = document.getElementsByClassName("projects")[0]
-
-for (var key in storedProjects) {
-        const currentProjects = storedProjects[key];
-        for (var i = 0; i < currentProjects.length; i++) {
-            var detail = currentProjects[i];
-            
-
-
-projectsEl.innerHTML += `
-    <section id="text-block" class="${key} container">
-    <h2>${detail.title}</h2>
-        <div class="col-10 align-self-center container">
-        
-            <p><a href="${detail.link}"><img src="../images/github.png" alt="" width="64px" height="64px">
-                Link to the Project</a></p>
-            <p>Date completed: ${detail.date}</p>
-            <p>Technology used: ${detail.tech}</p>
-            <p>Teammates involved: ${detail.team}</p>
-            <p>${detail.content}</p>
-                
-        </div>
-     </section>
-                `
-
-}
-}
+//set into a function for scope, ajax request the database for projects
+const projectsDOM = () => {$.ajax({url: "https://personal-site-ffb9c.firebaseio.com/myProjects.json"})
+    //assign .then to halt JS from executing before XHR returns with the data
+    .then(projects => {
+        //log our db for our poor dev
+        console.log(projects)
+            //grab the projects__list div from index.html
+            const projectsEl = document.getElementsByClassName("projects__list")[0]
+            //clear out any unwanted stuff
+            projectsEl.innerHTML = ""
+                // for each key in projects, print innerHTML
+                projects.forEach(project => {
+                    projectsEl.innerHTML += `
+                    <section id="text-block" class="container">
+                    <h2>${project.name}</h2>
+                        <div class="col-10 align-self-center container">
+                            <p><a href="${project.url}"><img src="../images/github.png" alt="" width="64px" height="64px">
+                                Link to the Project</a></p>
+                            <p>Date completed: ${project.dateCompleted}</p>
+                            <p>Technology used: ${project.techUsed}</p>
+                            <p>Teammates involved: ${project.teammates}</p>
+                            <p>${project.description}</p>
+                        </div>
+                    </section>
+                    `
+                })
+            }
+        )
+    }
+//exports
+module.exports = projectsDOM

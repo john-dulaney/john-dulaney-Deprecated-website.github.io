@@ -1,4 +1,3 @@
-// // $(document).ready(function () {
     
 //     const blogDOM = () => {$.ajax({url: "https://personal-site-ffb9c.firebaseio.com/myBlog.json"})
 //         .then(blogs => {
