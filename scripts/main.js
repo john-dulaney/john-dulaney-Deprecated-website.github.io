@@ -10,7 +10,7 @@ const contactDOM = require("./contact/contact-control.js")
 const projectsDOM = require("./projects/projects-control.js")
 const resumeDOM = require("./resume/resume-control.js")
 
-
+//loads all DOM population modules.
 const loadDOM = function(){
     navigationBarDOM()
     blogDOM()
@@ -19,7 +19,8 @@ const loadDOM = function(){
     resumeDOM()
 }
 
-    loadDOM()
+    //call the loaded function
+        loadDOM()
 
 // exports      
 module.exports = loadDOM    

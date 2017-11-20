@@ -1,5 +1,5 @@
-// Author: John Dulaney
-// Purpose: This module grabs navigationBar posts and prints them to the DOM
+// Author: John Dulaney and Paul Ellis
+// Purpose: This module grabs navbar links and prints them to the DOM
 // ┌(° ͜ʖ͡°)┘
 
 //set into a function for scope, ajax request the database for navigationBar

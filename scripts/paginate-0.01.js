@@ -5,26 +5,39 @@
 //Code borrowed from the Warlock Steve. He killed several gnomes to enchant this grimoire.
 console.log("pagination")
 
+//set into a function for both scope and utility
 const paginate = (items, paginationElClass, outputElClass) => {
+    // define how many items will be in the pagination
     const totalItems = items.length
+    // define how many items per page will be displayed
     const itemsPerPage = 4
+    // divide total amount of items by the amount requested per page (4)
     const numberOfPages = Math.ceil(totalItems / itemsPerPage)
+    //these are used to get the unique css selectors of theelements to be paginated, not 100% on how it knows
     const paginationEl = document.querySelector(`.${paginationElClass}`)
     const outputEl = document.querySelector(`.${outputElClass}`)
 
     // Build the DOM string for the pagination links in the footer
+    //begin string as an unordered list
     let paginationString = "<ul>"
+    //add to string an anchor tag with a previous arrow
     paginationString += "<a id='previous' href='#'>&lt;</a>"
+    //for loop iterating over the number of pages
     for (var i = 0; i < numberOfPages; i++) {
+        // add list items, anchor tag with unique class selectors of i+1
         paginationString += ` <li><a class="page page-${i+1}" href="#">${i+1}</a></li>`
     }
+    // add another anchor tag with an arrow that displays 'next'
     paginationString += " <a id='next' class='page-2' href='#'>&gt;</a>"
+    //ending unordered list tag to keep good semantic html
     paginationString += "</ul>"
 
     // Update the DOM with the unordered list we just built
+    //^^^^ lol 'we'
     paginationEl.innerHTML = paginationString
 
     // Store references to the next and previous arrows we just added
+    // these 2 variables work with the queryselectors at the beginning
     const previousEl = document.getElementById("previous")
     const nextEl = document.getElementById("next")
 
