@@ -4,26 +4,16 @@
 
 // imports
 const db = require("./database")
+const blogDOM = require("./blog/blog-control.js")
 
 
-const main = function(   ){
-        
+const main = function(){
+       return blogDOM()
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
+main()
 
 // exports      
 module.exports = main
