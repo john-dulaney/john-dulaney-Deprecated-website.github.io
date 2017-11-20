@@ -39,7 +39,7 @@ module.exports = function (grunt) {
         },
       eslint: {
         src: [
-          "**/scripts/**/*.js", "!node_modules/**/*.js", "**/admin/scripts/*.js", "**/blog/scripts/*.js", "**/contact/scripts/*.js", "**/projects/script/s*.js", "**/resume/scripts/*.js"
+          "**/scripts/**/*.js", "!node_modules/**/*.js"
         ],
       },
     });

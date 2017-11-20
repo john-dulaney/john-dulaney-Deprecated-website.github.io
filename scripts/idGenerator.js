@@ -1,3 +1,6 @@
+// Author: John Dulaney
+// Purpose: id generator function
+// ┌(° ͜ʖ͡°)┘
 
 const idGenerator = function* (startFrom = 0) {
     let id = 1
@@ -8,4 +11,5 @@ const idGenerator = function* (startFrom = 0) {
     }
 }
 
+//exports
 module.exports = idGenerator

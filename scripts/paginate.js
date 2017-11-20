@@ -1,3 +1,7 @@
+// Author: Steve Brownlee with some John
+// Purpose: Pagination function to be used by other modules that need a paginate feature
+// ┌(° ͜ʖ͡°)┘
+
 //Code borrowed from the Warlock Steve. He killed several gnomes to enchant this grimoire.
 console.log("pagination")
 
@@ -108,4 +112,5 @@ const paginate = (items, paginationElClass, outputElClass) => {
     nextEl.addEventListener("click", produceArticles)
 }
 
+// exports
 module.exports = paginate
