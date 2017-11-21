@@ -1,0 +1,32 @@
+{
+    "myButtons": [{
+            "id": "1",
+            "onclick": "pageJump(1)",
+            "value": "1"
+        },
+
+        {
+            "id": "2",
+            "onclick": "pageJump(2)",
+            "value": "2"
+        },
+
+        {
+            "id": "3",
+            "onclick": "pageJump(3)",
+            "value": "3"
+        },
+
+        {
+            "id": "4",
+            "onclick": "pageJump(4)",
+            "value": "4"
+        },
+
+        {
+            "id": "5",
+            "onclick": "pageJump(5)",
+            "value": "5"
+        }
+    ]
+}
