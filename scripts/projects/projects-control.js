@@ -7,7 +7,7 @@ const projectsDOM = () => {$.ajax({url: "https://personal-site-ffb9c.firebaseio.
     //assign .then to halt JS from executing before XHR returns with the data
     .then(projects => {
         //log our db for our poor dev
-        console.log(projects)
+        console.log("projects", projects)
             //grab the projects__list div from index.html
             const projectsEl = document.getElementsByClassName("projects__list")[0]
             //clear out any unwanted stuff

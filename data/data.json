@@ -205,5 +205,10 @@
             "url": "mailto:john.s.dulaney1@gmail.com",
             "icon": "../images/gmail.svg"
         }
-    ]
+    ],
+    "splash": [{
+        "content": "Hello, I am apprentice web developer John Dulaney and welcome to my site! I say apprentice because I am currently enrolled in a full stack front end web development course at the Nashville Software School. This site is a representation of skills I have learned/am learning, as well as a project we are require to keep up with.",
+        
+        "content2" : "A short little bio: I was born November 22nd, 1988 in Knoxville Tennessee and have been living between East and middle TN my whole life, save the 5 years I attended a military academy in Missouri (Wentworth Military Academy). I graduated and Commissioned as an officer in the National Guard from there and soon attended the University of Missouri where a car accident ended my Army career and left me in a wheelchair. I have since returned to the Nashville area and attend NSS with high hopes on becoming a competent and successful web developer." 
+    }]
 }

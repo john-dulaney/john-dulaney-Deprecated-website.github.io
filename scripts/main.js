@@ -4,6 +4,7 @@
 
 // imports
 const db = require("./database")
+const splashDOM = require("./splash/splash-control.js")
 const navigationBarDOM = require("./nav/nav-control.js")
 const blogDOM = require("./blog/blog-control.js")
 const contactDOM = require("./contact/contact-control.js")
@@ -12,6 +13,7 @@ const resumeDOM = require("./resume/resume-control.js")
 
 //loads all DOM population modules.
 const loadDOM = function(){
+    splashDOM()
     navigationBarDOM()
     blogDOM()
     contactDOM()

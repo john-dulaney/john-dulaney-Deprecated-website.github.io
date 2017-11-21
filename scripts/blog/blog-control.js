@@ -7,7 +7,7 @@ const blogDOM = () => {$.ajax({url: "https://personal-site-ffb9c.firebaseio.com/
     //assign .then to halt JS from executing before XHR returns with the data
     .then(blogs => {
         //log our db for our poor dev
-        console.log(blogs)
+        console.log("blogs", blogs)
             //grab the blog__list div from index.html
             const blogEl = document.getElementsByClassName("blog__list")[0]
             //clear out any unwanted stuff
