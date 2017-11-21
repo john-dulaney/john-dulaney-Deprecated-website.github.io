@@ -1,0 +1,22 @@
+{
+    "resume": [{
+            "title": "Produce Clerk",
+            "company": "The Fresh Market",
+            "dates": "2006",
+            "responsibilities": "Chop fruit and keep the aisles lookoing good"
+        },
+        {
+            "title": "Private, Cadet, Platoon Leader",
+            "company": "Missouri National Guard",
+            "dates": "2007-2010",
+            "responsibilities": "Ensure my platoon of 36 men were as lethal as possible and that all the needs of my commanders were met"
+        },
+        {
+            "title": "Stay at home son/student",
+            "company": "Home llc",
+            "dates": "2012- 2017",
+            "responsibilities": "Keep the house clean and make life easy for elderly parents/recover from broken back/go to school"
+        }
+
+    ]
+}
