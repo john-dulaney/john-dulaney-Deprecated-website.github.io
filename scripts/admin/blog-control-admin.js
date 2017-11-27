@@ -1,4 +1,7 @@
-// Free code from NSS Instructor Steve Thanks!
+// Author: John Dulaney
+// Purpose: This module grabs my bio and prints it to the DOM
+// ┌(° ͜ʖ͡°)┘  
+// Free code from NSS Instructor Steve Thanks! 
 
 // imports
 const idGenerator = require("../idGenerator")

@@ -1,4 +1,7 @@
-{
+// Author: John Dulaney
+// Purpose: This module is intended to be a projects form for admin. this is a work in progress.
+// ┌(° ͜ʖ͡°)┘  
+  
     console.log("cells within cells interlinked, interlinked")
     // Free code from NSS Instructor Steve Thanks!
         // Get the database from local storage, or empty object if null
@@ -87,7 +90,7 @@
         })
     
     
-    }  
+    
 
 
 

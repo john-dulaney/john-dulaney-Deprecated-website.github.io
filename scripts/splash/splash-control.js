@@ -1,4 +1,7 @@
-    
+// Author: John Dulaney
+// Purpose: This module grabs my bio and prints it to the DOM
+// ┌(° ͜ʖ͡°)┘  
+  
 const splashDOM = () => {$.ajax({url: "https://personal-site-ffb9c.firebaseio.com/splash.json"})
     .then(splashPop => {
         console.log("splash bio", splashPop)
