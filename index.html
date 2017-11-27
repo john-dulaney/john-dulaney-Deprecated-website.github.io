@@ -31,32 +31,59 @@
 
     <h2><strong>Welcome to My Personal Site!</strong></h2>
     <img src="../images/me_boy_boat.jpg" id="profilepic" alt="">
+    <!-- 
+    <article class="form-control text-block col-6">
+        <form name="article__form">
+            <h1>Login</h1>
+            <label>username</label>
+            <div class="form-group col-3">
+                <input type="text" name='login__email' id="" class="login__email" value="" placeholder="Email">
+            </div>
+                <div class="form-group col-3">
+            <label  >Password</label>
+                <input type="text" value="" id="" class="login__password" placeholder="Password">
+            </div>
+            <button class="login__submit">Login</button>    
+        </form>
+    </article> -->
+
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('logModal').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="logModal" class="modal">
+        <span onclick="document.getElementById('logModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="login">
+            <div class="imgcontainer">
+                <img src="./images/gfb.svg" height="64px" width="64px" alt="Avatar" class="avatar">
+                <b>Login</b>
+            </div>
+
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="container" style="background-color:#a3e3eb">
+                <button type="button" onclick="document.getElementById('logModal').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
     <div id="splash" class="splash" name="#">
         <!-- welcome -->
     </div>
-    <section id="login" class="mainSection hidden">
-        <div class="container">
-          <div class="login flex-col">
-            <h1 class="login__title">Coach's Corner</h1>
-            <div class="login__form flex-col">
-              <div class="flex-col animated slideInLeft">
-                <span>Email</span>
-                <input type="text" class="login__email" />
-              </div>
-              <div class="flex-col animated slideInRight">
-                <span class="passwd-header">Password</span>
-                <input type="password" class="login__password" />
-              </div>
-              <button class="login__submit">Login</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    
 
     <div id="blog">
         <!-- blogs -->
-        <div class="blog__list" style="list-style: none;"  name="blog">
+        <div class="blog__list" style="list-style: none;" name="blog">
         </div>
 
         <div class="blog__paginator">
@@ -81,31 +108,31 @@
         <!-- ( ° ͜ʖ͡°)╭∩╮ -->
         <!-- ( ° ͜ʖ͡°)╭∩╮ -->
     </div>
- 
+
 
 </body>
 <footer>
     <div class="footer">
         <div id="contact" name="contact">
-                <!-- contact info -->
-                <div class="contact__list">
-                </div>
+            <!-- contact info -->
+            <div class="contact__list">
+            </div>
         </div>
         <a href="#">Blog Form</a>
         <a href="#">Project Form</a>
     </div>
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyD_w-miDKvl2jeZP6-Km94bc0TCfOhHBj4",
-        authDomain: "personal-site-ffb9c.firebaseapp.com",
-        databaseURL: "https://personal-site-ffb9c.firebaseio.com",
-        projectId: "personal-site-ffb9c",
-        storageBucket: "personal-site-ffb9c.appspot.com",
-        messagingSenderId: "126279178759"
-      };
-      firebase.initializeApp(config);
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD_w-miDKvl2jeZP6-Km94bc0TCfOhHBj4",
+            authDomain: "personal-site-ffb9c.firebaseapp.com",
+            databaseURL: "https://personal-site-ffb9c.firebaseio.com",
+            projectId: "personal-site-ffb9c",
+            storageBucket: "personal-site-ffb9c.appspot.com",
+            messagingSenderId: "126279178759"
+        };
+        firebase.initializeApp(config);
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
