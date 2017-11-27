@@ -4,6 +4,7 @@
 
 // imports
 const db = require("./database")
+const admin = require("../node_modules/firebase/firebase-admin")
 const splashDOM = require("./splash/splash-control.js")
 const navigationBarDOM = require("./nav/nav-control.js")
 const blogDOM = require("./blog/blog-control.js")
