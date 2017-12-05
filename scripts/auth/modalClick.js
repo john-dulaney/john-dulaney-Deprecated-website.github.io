@@ -1,6 +1,6 @@
 
 
-
+const $ = require("jquery")
 
 // Get the modal
 // const modal = document.getElementById('logModal');
